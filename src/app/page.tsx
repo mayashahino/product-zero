@@ -1,5 +1,7 @@
 import { ChevronDown, ClipboardCheck, Link2, Mail, Rocket, Workflow } from 'lucide-react'
 
+import BirdVideo from './BirdVideo'
+
 const caseStudies = [
   {
     id: 'moonshop',
@@ -98,44 +100,47 @@ export default function Home() {
       </header>
 
       {/* Hero */}
-      <section className="mx-auto max-w-4xl px-8 pt-20 pb-24">
-        <span className="inline-block rounded-full border border-indigo-200 bg-indigo-50 px-4 py-1.5 text-xs font-medium tracking-wide text-indigo-600">
-          PRODUCT MANAGER
-        </span>
-        <h1 className="mt-8 font-serif text-6xl leading-[1.1]">
-          Building better products by creating{' '}
-          <span className="italic text-indigo-600">better systems.</span>
-        </h1>
-        <p className="mt-6 max-w-xl text-lg text-neutral-500">
-          I help teams turn ambiguity into structured execution through product thinking, evidence, and
-          intentional design.
-        </p>
-        <div className="mt-8 flex gap-4">
-          <a
-            href="#work"
-            className="flex items-center gap-2 rounded-full bg-neutral-900 px-6 py-3 text-sm font-medium text-white"
-          >
-            View Case Studies →
-          </a>
-          <a
-            href="#contact"
-            className="rounded-full border border-neutral-300 px-6 py-3 text-sm font-medium text-neutral-900"
-          >
-            Contact Me
-          </a>
-        </div>
-        <div className="mt-16 grid max-w-md grid-cols-3 gap-8 border-t border-neutral-200 pt-8">
-          <div>
-            <p className="font-serif text-3xl text-indigo-600">5+</p>
-            <p className="text-sm text-neutral-500">Years in product</p>
+      <section className="relative overflow-hidden px-8 pt-20 pb-24">
+        <BirdVideo className="animate-bird pointer-events-none absolute -top-2 right-0 hidden aspect-square w-48 sm:block md:-top-4 md:right-6 md:w-64 lg:right-12 lg:w-72" />
+        <div className="mx-auto max-w-4xl">
+          <span className="inline-block rounded-full border border-indigo-200 bg-indigo-50 px-4 py-1.5 text-xs font-medium tracking-wide text-indigo-600">
+            PRODUCT MANAGER
+          </span>
+          <h1 className="mt-8 font-serif text-6xl leading-[1.1]">
+            Building better products by creating{' '}
+            <span className="italic text-indigo-600">better systems.</span>
+          </h1>
+          <p className="mt-6 max-w-xl text-lg text-neutral-500">
+            I help teams turn ambiguity into structured execution through product thinking, evidence, and
+            intentional design.
+          </p>
+          <div className="mt-8 flex gap-4">
+            <a
+              href="#work"
+              className="flex items-center gap-2 rounded-full bg-neutral-900 px-6 py-3 text-sm font-medium text-white"
+            >
+              View Case Studies →
+            </a>
+            <a
+              href="#contact"
+              className="rounded-full border border-neutral-300 px-6 py-3 text-sm font-medium text-neutral-900"
+            >
+              Contact Me
+            </a>
           </div>
-          <div>
-            <p className="font-serif text-3xl text-indigo-600">12+</p>
-            <p className="text-sm text-neutral-500">Products shipped</p>
-          </div>
-          <div>
-            <p className="font-serif text-3xl text-indigo-600">3×</p>
-            <p className="text-sm text-neutral-500">Avg. velocity gain</p>
+          <div className="mt-16 grid max-w-md grid-cols-3 gap-8 border-t border-neutral-200 pt-8">
+            <div>
+              <p className="font-serif text-3xl text-indigo-600">5+</p>
+              <p className="text-sm text-neutral-500">Years in product</p>
+            </div>
+            <div>
+              <p className="font-serif text-3xl text-indigo-600">12+</p>
+              <p className="text-sm text-neutral-500">Products shipped</p>
+            </div>
+            <div>
+              <p className="font-serif text-3xl text-indigo-600">3×</p>
+              <p className="text-sm text-neutral-500">Avg. velocity gain</p>
+            </div>
           </div>
         </div>
       </section>
